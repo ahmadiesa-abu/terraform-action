@@ -48,6 +48,11 @@ inputs:
       boolean flag to indicate whether to apply the module or just execute plan
     required: false
     default: "false"
+  cost:
+    description: |
+      boolean flag to indicate whether to apply the module or just execute plan&cost
+    required: false
+    default: "false"
 outputs:
   environment-data:
     description: The Cloudify environment's outputs and capabilties
@@ -73,3 +78,5 @@ runs:
     - ${{ inputs.outputs-file }}
     - '--plan'
     - ${{ inputs.plan }}
+    - '--cost'
+    - ${{ inputs.cost }}
