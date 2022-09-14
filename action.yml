@@ -58,7 +58,7 @@ outputs:
     description: The Cloudify environment's outputs and capabilties
 runs:
   using: docker
-  image: docker://ahmadiesa/cfyci:6.3.0
+  image: docker://ahmadiesa/cfyci:6.4.0
   entrypoint: cfyci
   args:
     - terraform
